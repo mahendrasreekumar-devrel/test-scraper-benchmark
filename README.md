@@ -32,9 +32,9 @@ You bring your own API keys. Plug them into `.env`, run one command, get a termi
 
 Pre-run results and charts are in [`results/official/`](results/official/). Re-run at any time with your own keys to verify.
 
-![Success Rate](results/official/plots/success_rate.png)
-![Category Heatmap](results/official/plots/category_heatmap.png)
-![Response Time](results/official/plots/response_time.png)
+![Success Rate](results/official/plots/success_rate_light.png)
+![Category Table](results/official/plots/category_table_light.png)
+![Category Heatmap](results/official/plots/category_heatmap_light.png)
 
 ## Quickstart
 

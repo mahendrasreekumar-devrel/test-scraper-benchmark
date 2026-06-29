@@ -1,0 +1,145 @@
+scraper,category,url_name,url,passed,success,response_time_ms,raw_bytes,markdown_bytes,content_quality_score,error
+Anakin,js_heavy,Vercel Homepage,https://vercel.com,True,True,2508.7,520590,3142,1.0,
+Anakin,static_html,Quotes to Scrape (test site),https://quotes.toscrape.com,True,True,2883.9,11064,4261,1.0,
+Anakin,static_html,Hacker News,https://news.ycombinator.com,True,True,2911.7,34904,14550,1.0,
+Anakin,static_html,Wikipedia – Web Scraping,https://en.wikipedia.org/wiki/Web_scraping,True,True,3008.3,168219,59838,0.7,
+Anakin,js_heavy,React Docs,https://react.dev,True,True,2238.2,272468,13310,1.0,
+Anakin,cloudflare_protected,Cloudflare – About,https://www.cloudflare.com/en-gb/learning/what-is-cloudflare/,True,True,2545.6,424185,6726,1.0,
+Anakin,js_heavy,Tailwind CSS Docs,https://tailwindcss.com/docs/installation,True,True,2683.5,365855,3830,1.0,
+Anakin,js_heavy,Stripe Docs,https://stripe.com/docs,True,True,6696.2,1241303,3312,1.0,
+Anakin,cloudflare_protected,Discord Safety,https://discord.com/safety,True,True,2596.5,88754,2170,1.0,
+Anakin,cloudflare_protected,Canva Learn,https://www.canva.com/learn/what-is-graphic-design/,True,True,2790.6,12436,110,0.7,
+Anakin,cloudflare_protected,Coinbase – Bitcoin explainer,https://www.coinbase.com/learn/crypto-basics/what-is-bitcoin,True,True,3025.4,472425,27783,1.0,
+Anakin,js_heavy,Next.js Docs,https://nextjs.org/docs,True,True,6734.0,777411,4142,1.0,
+Anakin,akamai_perimeter_protected,Target – AirPods Pro,https://www.target.com/p/apple-airpods-pro-2nd-generation/-/A-85978612,False,False,6203.3,9280,67,0.0,
+Anakin,ecommerce,Amazon – Echo Dot (5th Gen),https://www.amazon.com/dp/B0BDHWDR12,True,True,6485.6,1486107,42236,0.7,
+Anakin,akamai_perimeter_protected,Best Buy – AirPods Pro,https://www.bestbuy.com/site/apple-airpods-pro-2nd-generation/4900964.p,False,False,24010.2,0,0,0.0,"HTTPSConnectionPool(host='api.anakin.io', port=443): Max retries exceeded with url: /v1/url-scraper/10b35a2e-acb7-4d1d-b7bd-1b601a41306e (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))"
+Anakin,cloudflare_protected,Glassdoor Blog,https://www.glassdoor.com/blog/guide/how-to-write-a-resume/,True,True,26779.2,621785,24077,1.0,
+Anakin,static_html,HTTPBin HTML,https://httpbin.org/html,False,False,36588.9,0,0,0.0,polling timeout
+Anakin,news_media,TechCrunch,https://techcrunch.com/2025/01/01/the-best-tech-of-2024/,True,True,3638.7,211473,5495,1.0,
+Anakin,ecommerce,Walmart – AirPods Pro,https://www.walmart.com/ip/Apple-AirPods-Pro-2nd-Generation/2125259679,False,False,6551.3,3472,84,0.0,
+Anakin,news_media,Ars Technica,https://arstechnica.com,True,True,2648.6,351145,31329,0.7,
+Firecrawl,static_html,Wikipedia – Web Scraping,https://en.wikipedia.org/wiki/Web_scraping,True,True,2522.1,165924,50384,1.0,
+Anakin,news_media,BBC Tech,https://www.bbc.com/news/technology,True,True,4655.2,526906,21282,0.7,
+Firecrawl,static_html,Hacker News,https://news.ycombinator.com,True,True,1996.2,40227,15374,1.0,
+Anakin,ecommerce,Etsy – Listing,https://www.etsy.com/listing/1837820578,False,False,27215.5,485100,51,0.0,
+Firecrawl,static_html,HTTPBin HTML,https://httpbin.org/html,True,True,1377.5,3721,3599,1.0,
+Firecrawl,static_html,Quotes to Scrape (test site),https://quotes.toscrape.com,True,True,1532.9,10803,4281,1.0,
+Firecrawl,js_heavy,React Docs,https://react.dev,True,True,2292.4,221069,16088,1.0,
+Firecrawl,js_heavy,Next.js Docs,https://nextjs.org/docs,True,True,1452.9,31423,4050,1.0,
+Firecrawl,js_heavy,Stripe Docs,https://stripe.com/docs,True,True,2927.9,127363,6399,0.7,
+Firecrawl,js_heavy,Vercel Homepage,https://vercel.com,True,True,2977.5,109663,3127,1.0,
+Anakin,akamai_perimeter_protected,Chewy – Dog Food,https://www.chewy.com/royal-canin-medium-adult-dry-dog-food/dp/53506,False,False,36269.7,0,0,0.0,polling timeout
+Anakin,ecommerce,eBay – Listing,https://www.ebay.com/itm/256683475247,True,True,29245.0,1995,179,1.0,
+Firecrawl,cloudflare_protected,Canva Learn,https://www.canva.com/learn/what-is-graphic-design/,True,True,1376.8,5507,110,0.7,
+Firecrawl,js_heavy,Tailwind CSS Docs,https://tailwindcss.com/docs/installation,True,True,2271.8,43994,3156,1.0,
+Firecrawl,cloudflare_protected,Discord Safety,https://discord.com/safety,True,True,1856.4,17597,5723,1.0,
+Firecrawl,cloudflare_protected,Cloudflare – About,https://www.cloudflare.com/en-gb/learning/what-is-cloudflare/,True,True,3192.2,40414,13260,1.0,
+Firecrawl,cloudflare_protected,Coinbase – Bitcoin explainer,https://www.coinbase.com/learn/crypto-basics/what-is-bitcoin,True,True,2697.2,94425,24551,1.0,
+Firecrawl,cloudflare_protected,Glassdoor Blog,https://www.glassdoor.com/blog/guide/how-to-write-a-resume/,True,True,2093.5,140845,30011,1.0,
+Firecrawl,akamai_perimeter_protected,Target – AirPods Pro,https://www.target.com/p/apple-airpods-pro-2nd-generation/-/A-85978612,True,True,2068.6,9280,1084,1.0,
+Firecrawl,ecommerce,Amazon – Echo Dot (5th Gen),https://www.amazon.com/dp/B0BDHWDR12,False,False,21241.6,0,0,0.0,408 Client Error: Request Timeout for url: https://api.firecrawl.dev/v1/scrape
+Firecrawl,ecommerce,eBay – Listing,https://www.ebay.com/itm/256683475247,False,False,21240.9,0,0,0.0,408 Client Error: Request Timeout for url: https://api.firecrawl.dev/v1/scrape
+Firecrawl,ecommerce,Etsy – Listing,https://www.etsy.com/listing/1837820578,False,False,21943.5,0,0,0.0,408 Client Error: Request Timeout for url: https://api.firecrawl.dev/v1/scrape
+Firecrawl,ecommerce,Walmart – AirPods Pro,https://www.walmart.com/ip/Apple-AirPods-Pro-2nd-Generation/2125259679,False,False,21109.3,0,0,0.0,408 Client Error: Request Timeout for url: https://api.firecrawl.dev/v1/scrape
+ZenRows,static_html,Wikipedia – Web Scraping,https://en.wikipedia.org/wiki/Web_scraping,True,True,6679.2,65259,65259,0.7,
+Firecrawl,akamai_perimeter_protected,Best Buy – AirPods Pro,https://www.bestbuy.com/site/apple-airpods-pro-2nd-generation/4900964.p,False,False,31831.2,0,0,0.0,408 Client Error: Request Timeout for url: https://api.firecrawl.dev/v1/scrape
+Firecrawl,akamai_perimeter_protected,Chewy – Dog Food,https://www.chewy.com/royal-canin-medium-adult-dry-dog-food/dp/53506,False,False,31543.0,0,0,0.0,408 Client Error: Request Timeout for url: https://api.firecrawl.dev/v1/scrape
+ZenRows,static_html,Quotes to Scrape (test site),https://quotes.toscrape.com,False,False,936.8,0,0,0.0,400 Client Error: Bad Request for url: https://api.zenrows.com/v1/?apikey=b611634b709afa6b004fcd49c5f5f8f92747b82b&url=https%3A%2F%2Fquotes.toscrape.com&js_render=true&premium_proxy=true&markdown_response=true
+Firecrawl,news_media,BBC Tech,https://www.bbc.com/news/technology,True,True,10626.5,222418,29233,0.7,
+Firecrawl,news_media,Ars Technica,https://arstechnica.com,True,True,9959.9,275707,36480,1.0,
+ZenRows,static_html,Hacker News,https://news.ycombinator.com,True,True,3764.6,16291,16291,1.0,
+ZenRows,js_heavy,React Docs,https://react.dev,True,True,5521.2,18304,18304,1.0,
+ZenRows,js_heavy,Vercel Homepage,https://vercel.com,True,True,5791.8,11559,11559,1.0,
+ZenRows,cloudflare_protected,Cloudflare – About,https://www.cloudflare.com/en-gb/learning/what-is-cloudflare/,False,False,1006.3,0,0,0.0,400 Client Error: Bad Request for url: https://api.zenrows.com/v1/?apikey=b611634b709afa6b004fcd49c5f5f8f92747b82b&url=https%3A%2F%2Fwww.cloudflare.com%2Fen-gb%2Flearning%2Fwhat-is-cloudflare%2F&js_render=true&premium_proxy=true&markdown_response=true
+ZenRows,js_heavy,Next.js Docs,https://nextjs.org/docs,True,True,6989.4,45835,45835,0.7,
+ZenRows,js_heavy,Tailwind CSS Docs,https://tailwindcss.com/docs/installation,True,True,3759.0,17540,17540,1.0,
+ZenRows,js_heavy,Stripe Docs,https://stripe.com/docs,True,True,12555.6,6087,6087,1.0,
+ZenRows,cloudflare_protected,Canva Learn,https://www.canva.com/learn/what-is-graphic-design/,False,False,4911.3,0,0,0.0,404 Client Error: Not Found for url: https://api.zenrows.com/v1/?apikey=b611634b709afa6b004fcd49c5f5f8f92747b82b&url=https%3A%2F%2Fwww.canva.com%2Flearn%2Fwhat-is-graphic-design%2F&js_render=true&premium_proxy=true&markdown_response=true
+ZenRows,cloudflare_protected,Coinbase – Bitcoin explainer,https://www.coinbase.com/learn/crypto-basics/what-is-bitcoin,True,True,7114.1,39180,39180,0.7,
+ZenRows,cloudflare_protected,Discord Safety,https://discord.com/safety,True,True,8656.0,14278,14278,1.0,
+ZenRows,static_html,HTTPBin HTML,https://httpbin.org/html,False,False,21029.8,0,0,0.0,422 Client Error: Unprocessable Entity for url: https://api.zenrows.com/v1/?apikey=b611634b709afa6b004fcd49c5f5f8f92747b82b&url=https%3A%2F%2Fhttpbin.org%2Fhtml&js_render=true&premium_proxy=true&markdown_response=true
+ZenRows,akamai_perimeter_protected,Chewy – Dog Food,https://www.chewy.com/royal-canin-medium-adult-dry-dog-food/dp/53506,False,True,10690.4,139,139,0.0,
+ZenRows,akamai_perimeter_protected,Best Buy – AirPods Pro,https://www.bestbuy.com/site/apple-airpods-pro-2nd-generation/4900964.p,False,False,16236.6,0,0,0.0,422 Client Error: Unprocessable Entity for url: https://api.zenrows.com/v1/?apikey=b611634b709afa6b004fcd49c5f5f8f92747b82b&url=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fapple-airpods-pro-2nd-generation%2F4900964.p&js_render=true&premium_proxy=true&markdown_response=true
+ZenRows,ecommerce,Amazon – Echo Dot (5th Gen),https://www.amazon.com/dp/B0BDHWDR12,True,True,17770.7,104684,104684,0.7,
+ZenRows,akamai_perimeter_protected,Target – AirPods Pro,https://www.target.com/p/apple-airpods-pro-2nd-generation/-/A-85978612,False,False,24623.6,0,0,0.0,404 Client Error: Not Found for url: https://api.zenrows.com/v1/?apikey=b611634b709afa6b004fcd49c5f5f8f92747b82b&url=https%3A%2F%2Fwww.target.com%2Fp%2Fapple-airpods-pro-2nd-generation%2F-%2FA-85978612&js_render=true&premium_proxy=true&markdown_response=true
+ZenRows,ecommerce,Walmart – AirPods Pro,https://www.walmart.com/ip/Apple-AirPods-Pro-2nd-Generation/2125259679,False,False,6580.6,0,0,0.0,404 Client Error: Not Found for url: https://api.zenrows.com/v1/?apikey=b611634b709afa6b004fcd49c5f5f8f92747b82b&url=https%3A%2F%2Fwww.walmart.com%2Fip%2FApple-AirPods-Pro-2nd-Generation%2F2125259679&js_render=true&premium_proxy=true&markdown_response=true
+ZenRows,ecommerce,eBay – Listing,https://www.ebay.com/itm/256683475247,False,False,15079.7,0,0,0.0,422 Client Error: Unprocessable Entity for url: https://api.zenrows.com/v1/?apikey=b611634b709afa6b004fcd49c5f5f8f92747b82b&url=https%3A%2F%2Fwww.ebay.com%2Fitm%2F256683475247&js_render=true&premium_proxy=true&markdown_response=true
+Firecrawl,news_media,TechCrunch,https://techcrunch.com/2025/01/01/the-best-tech-of-2024/,False,False,60044.5,0,0,0.0,"HTTPSConnectionPool(host='api.firecrawl.dev', port=443): Read timed out. (read timeout=60)"
+ZenRows,news_media,TechCrunch,https://techcrunch.com/2025/01/01/the-best-tech-of-2024/,False,False,12731.3,0,0,0.0,404 Client Error: Not Found for url: https://api.zenrows.com/v1/?apikey=b611634b709afa6b004fcd49c5f5f8f92747b82b&url=https%3A%2F%2Ftechcrunch.com%2F2025%2F01%2F01%2Fthe-best-tech-of-2024%2F&js_render=true&premium_proxy=true&markdown_response=true
+ZenRows,news_media,Ars Technica,https://arstechnica.com,False,False,14769.4,0,0,0.0,
+ScraperAPI,static_html,Wikipedia – Web Scraping,https://en.wikipedia.org/wiki/Web_scraping,True,True,11496.7,397712,0,0.7,
+ZenRows,news_media,BBC Tech,https://www.bbc.com/news/technology,True,True,22062.5,32643,32643,1.0,
+ZenRows,cloudflare_protected,Glassdoor Blog,https://www.glassdoor.com/blog/guide/how-to-write-a-resume/,False,False,60912.6,0,0,0.0,"HTTPSConnectionPool(host='api.zenrows.com', port=443): Read timed out. (read timeout=60)"
+ScraperAPI,js_heavy,Stripe Docs,https://stripe.com/docs,False,False,701.7,0,0,0.0,403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=fc1a16a9abcd27fe2fe0050a89933c06&url=https%3A%2F%2Fstripe.com%2Fdocs&render=true
+ZenRows,ecommerce,Etsy – Listing,https://www.etsy.com/listing/1837820578,False,False,50939.3,0,0,0.0,404 Client Error: Not Found for url: https://api.zenrows.com/v1/?apikey=b611634b709afa6b004fcd49c5f5f8f92747b82b&url=https%3A%2F%2Fwww.etsy.com%2Flisting%2F1837820578&js_render=true&premium_proxy=true&markdown_response=true
+ScraperAPI,static_html,Hacker News,https://news.ycombinator.com,True,True,29560.4,34940,0,0.7,
+ScraperAPI,static_html,Quotes to Scrape (test site),https://quotes.toscrape.com,True,True,47071.4,11013,0,1.0,
+ScraperAPI,js_heavy,React Docs,https://react.dev,True,True,37456.9,272555,0,0.7,
+ScraperAPI,static_html,HTTPBin HTML,https://httpbin.org/html,False,False,56977.3,0,0,0.0,500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=fc1a16a9abcd27fe2fe0050a89933c06&url=https%3A%2F%2Fhttpbin.org%2Fhtml&render=true
+ScraperAPI,js_heavy,Vercel Homepage,https://vercel.com,True,True,55422.6,530039,0,0.7,
+ScraperAPI,js_heavy,Next.js Docs,https://nextjs.org/docs,True,True,45257.9,985762,0,0.7,
+ScraperAPI,js_heavy,Tailwind CSS Docs,https://tailwindcss.com/docs/installation,False,False,56935.8,0,0,0.0,500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=fc1a16a9abcd27fe2fe0050a89933c06&url=https%3A%2F%2Ftailwindcss.com%2Fdocs%2Finstallation&render=true
+ScraperAPI,cloudflare_protected,Cloudflare – About,https://www.cloudflare.com/en-gb/learning/what-is-cloudflare/,True,True,44671.8,558848,0,0.7,
+ScraperAPI,cloudflare_protected,Discord Safety,https://discord.com/safety,True,True,50578.0,145918,0,1.0,
+ScraperAPI,cloudflare_protected,Coinbase – Bitcoin explainer,https://www.coinbase.com/learn/crypto-basics/what-is-bitcoin,False,False,56839.3,0,0,0.0,500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=fc1a16a9abcd27fe2fe0050a89933c06&url=https%3A%2F%2Fwww.coinbase.com%2Flearn%2Fcrypto-basics%2Fwhat-is-bitcoin&render=true
+ScraperAPI,cloudflare_protected,Canva Learn,https://www.canva.com/learn/what-is-graphic-design/,False,False,55602.0,0,0,0.0,404 Client Error: Not Found for url: https://api.scraperapi.com/?api_key=fc1a16a9abcd27fe2fe0050a89933c06&url=https%3A%2F%2Fwww.canva.com%2Flearn%2Fwhat-is-graphic-design%2F&render=true
+ScraperAPI,cloudflare_protected,Glassdoor Blog,https://www.glassdoor.com/blog/guide/how-to-write-a-resume/,False,False,56756.1,0,0,0.0,500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=fc1a16a9abcd27fe2fe0050a89933c06&url=https%3A%2F%2Fwww.glassdoor.com%2Fblog%2Fguide%2Fhow-to-write-a-resume%2F&render=true
+ScraperAPI,ecommerce,eBay – Listing,https://www.ebay.com/itm/256683475247,False,False,7235.9,0,0,0.0,404 Client Error: Not Found for url: https://api.scraperapi.com/?api_key=fc1a16a9abcd27fe2fe0050a89933c06&url=https%3A%2F%2Fwww.ebay.com%2Fitm%2F256683475247&render=true
+ScraperAPI,ecommerce,Amazon – Echo Dot (5th Gen),https://www.amazon.com/dp/B0BDHWDR12,True,True,12761.4,1473758,0,0.7,
+ScraperAPI,akamai_perimeter_protected,Target – AirPods Pro,https://www.target.com/p/apple-airpods-pro-2nd-generation/-/A-85978612,False,False,34583.5,0,0,0.0,404 Client Error: Not Found for url: https://api.scraperapi.com/?api_key=fc1a16a9abcd27fe2fe0050a89933c06&url=https%3A%2F%2Fwww.target.com%2Fp%2Fapple-airpods-pro-2nd-generation%2F-%2FA-85978612&render=true
+ScraperAPI,akamai_perimeter_protected,Best Buy – AirPods Pro,https://www.bestbuy.com/site/apple-airpods-pro-2nd-generation/4900964.p,False,False,56832.3,0,0,0.0,500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=fc1a16a9abcd27fe2fe0050a89933c06&url=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fapple-airpods-pro-2nd-generation%2F4900964.p&render=true
+ScraperAPI,akamai_perimeter_protected,Chewy – Dog Food,https://www.chewy.com/royal-canin-medium-adult-dry-dog-food/dp/53506,False,False,56985.2,0,0,0.0,500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=fc1a16a9abcd27fe2fe0050a89933c06&url=https%3A%2F%2Fwww.chewy.com%2Froyal-canin-medium-adult-dry-dog-food%2Fdp%2F53506&render=true
+ScrapingBee,static_html,Wikipedia – Web Scraping,https://en.wikipedia.org/wiki/Web_scraping,True,True,4309.2,168390,0,0.7,
+ScrapingBee,static_html,Hacker News,https://news.ycombinator.com,True,True,2468.5,34948,0,0.7,
+ScraperAPI,news_media,BBC Tech,https://www.bbc.com/news/technology,True,True,41460.7,366876,0,0.7,
+ScrapingBee,static_html,Quotes to Scrape (test site),https://quotes.toscrape.com,True,True,3177.6,11013,0,1.0,
+ScraperAPI,ecommerce,Etsy – Listing,https://www.etsy.com/listing/1837820578,False,False,56857.4,0,0,0.0,500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=fc1a16a9abcd27fe2fe0050a89933c06&url=https%3A%2F%2Fwww.etsy.com%2Flisting%2F1837820578&render=true
+ScrapingBee,js_heavy,Vercel Homepage,https://vercel.com,True,True,2988.1,520548,0,0.7,
+ScraperAPI,ecommerce,Walmart – AirPods Pro,https://www.walmart.com/ip/Apple-AirPods-Pro-2nd-Generation/2125259679,False,False,53600.3,0,0,0.0,404 Client Error: Not Found for url: https://api.scraperapi.com/?api_key=fc1a16a9abcd27fe2fe0050a89933c06&url=https%3A%2F%2Fwww.walmart.com%2Fip%2FApple-AirPods-Pro-2nd-Generation%2F2125259679&render=true
+ScrapingBee,js_heavy,Next.js Docs,https://nextjs.org/docs,True,True,3569.9,777296,0,0.7,
+ScraperAPI,news_media,TechCrunch,https://techcrunch.com/2025/01/01/the-best-tech-of-2024/,False,False,56812.7,0,0,0.0,500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=fc1a16a9abcd27fe2fe0050a89933c06&url=https%3A%2F%2Ftechcrunch.com%2F2025%2F01%2F01%2Fthe-best-tech-of-2024%2F&render=true
+ScrapingBee,js_heavy,Stripe Docs,https://stripe.com/docs,True,True,11788.8,1252765,0,1.0,
+ScrapingBee,js_heavy,Tailwind CSS Docs,https://tailwindcss.com/docs/installation,True,True,3181.4,366013,0,0.7,
+ScrapingBee,cloudflare_protected,Cloudflare – About,https://www.cloudflare.com/en-gb/learning/what-is-cloudflare/,True,True,2812.6,424295,0,0.7,
+ScrapingBee,cloudflare_protected,Canva Learn,https://www.canva.com/learn/what-is-graphic-design/,False,False,3788.3,0,0,0.0,404 Client Error: NOT FOUND for url: https://app.scrapingbee.com/api/v1/?api_key=14P8D1X1ZQQU5L8B4LYW03Q1I3GFN5I9UE9XEWTY5UVTJVRW1ID3IO0NGRTOUFO5KUH4LVGLDDIM5AWC&url=https%3A%2F%2Fwww.canva.com%2Flearn%2Fwhat-is-graphic-design%2F&render_js=true&premium_proxy=true
+ScrapingBee,cloudflare_protected,Coinbase – Bitcoin explainer,https://www.coinbase.com/learn/crypto-basics/what-is-bitcoin,True,True,4124.2,443021,0,0.7,
+ScrapingBee,cloudflare_protected,Discord Safety,https://discord.com/safety,True,True,5117.7,97081,0,1.0,
+ScrapingBee,js_heavy,React Docs,https://react.dev,True,True,17797.6,272902,0,0.7,
+ScraperAPI,news_media,Ars Technica,https://arstechnica.com,False,False,58160.7,0,0,0.0,500 Server Error: Internal Server Error for url: https://api.scraperapi.com/?api_key=fc1a16a9abcd27fe2fe0050a89933c06&url=https%3A%2F%2Farstechnica.com&render=true
+ScrapingBee,ecommerce,Amazon – Echo Dot (5th Gen),https://www.amazon.com/dp/B0BDHWDR12,True,True,7073.9,1562624,0,0.7,
+ScrapingBee,akamai_perimeter_protected,Target – AirPods Pro,https://www.target.com/p/apple-airpods-pro-2nd-generation/-/A-85978612,False,False,14396.2,0,0,0.0,404 Client Error: NOT FOUND for url: https://app.scrapingbee.com/api/v1/?api_key=14P8D1X1ZQQU5L8B4LYW03Q1I3GFN5I9UE9XEWTY5UVTJVRW1ID3IO0NGRTOUFO5KUH4LVGLDDIM5AWC&url=https%3A%2F%2Fwww.target.com%2Fp%2Fapple-airpods-pro-2nd-generation%2F-%2FA-85978612&render_js=true&premium_proxy=true
+ScrapingBee,ecommerce,Etsy – Listing,https://www.etsy.com/listing/1837820578,True,True,6068.5,1508,0,1.0,
+ScrapingBee,ecommerce,eBay – Listing,https://www.ebay.com/itm/256683475247,False,False,12408.0,0,0,0.0,404 Client Error: NOT FOUND for url: https://app.scrapingbee.com/api/v1/?api_key=14P8D1X1ZQQU5L8B4LYW03Q1I3GFN5I9UE9XEWTY5UVTJVRW1ID3IO0NGRTOUFO5KUH4LVGLDDIM5AWC&url=https%3A%2F%2Fwww.ebay.com%2Fitm%2F256683475247&render_js=true&premium_proxy=true
+ScrapingBee,news_media,TechCrunch,https://techcrunch.com/2025/01/01/the-best-tech-of-2024/,False,False,7852.8,0,0,0.0,404 Client Error: NOT FOUND for url: https://app.scrapingbee.com/api/v1/?api_key=14P8D1X1ZQQU5L8B4LYW03Q1I3GFN5I9UE9XEWTY5UVTJVRW1ID3IO0NGRTOUFO5KUH4LVGLDDIM5AWC&url=https%3A%2F%2Ftechcrunch.com%2F2025%2F01%2F01%2Fthe-best-tech-of-2024%2F&render_js=true&premium_proxy=true
+ScrapingBee,static_html,HTTPBin HTML,https://httpbin.org/html,False,False,60354.0,0,0,0.0,"HTTPSConnectionPool(host='app.scrapingbee.com', port=443): Read timed out. (read timeout=60)"
+ScrapingBee,news_media,Ars Technica,https://arstechnica.com,False,False,471.7,0,0,0.0,429 Client Error: TOO MANY REQUESTS for url: https://app.scrapingbee.com/api/v1/?api_key=14P8D1X1ZQQU5L8B4LYW03Q1I3GFN5I9UE9XEWTY5UVTJVRW1ID3IO0NGRTOUFO5KUH4LVGLDDIM5AWC&url=https%3A%2F%2Farstechnica.com&render_js=true&premium_proxy=true
+Tavily,static_html,Wikipedia – Web Scraping,https://en.wikipedia.org/wiki/Web_scraping,True,True,1549.9,26672,0,0.7,
+Tavily,static_html,Hacker News,https://news.ycombinator.com,True,True,1103.8,16268,0,1.0,
+Tavily,static_html,HTTPBin HTML,https://httpbin.org/html,True,True,757.9,3599,0,1.0,
+ScrapingBee,news_media,BBC Tech,https://www.bbc.com/news/technology,True,True,5257.7,456028,0,1.0,
+Tavily,static_html,Quotes to Scrape (test site),https://quotes.toscrape.com,True,True,716.1,2891,0,1.0,
+Tavily,js_heavy,Vercel Homepage,https://vercel.com,True,True,733.9,3132,0,0.7,
+Tavily,js_heavy,Stripe Docs,https://stripe.com/docs,True,True,722.5,5713,0,1.0,
+Tavily,js_heavy,React Docs,https://react.dev,True,True,1011.0,10145,0,0.7,
+Tavily,js_heavy,Tailwind CSS Docs,https://tailwindcss.com/docs/installation,True,True,734.8,3622,0,1.0,
+Tavily,js_heavy,Next.js Docs,https://nextjs.org/docs,True,True,1860.7,87768,0,1.0,
+Tavily,cloudflare_protected,Cloudflare – About,https://www.cloudflare.com/en-gb/learning/what-is-cloudflare/,True,True,1054.3,30389,0,1.0,
+Tavily,cloudflare_protected,Discord Safety,https://discord.com/safety,True,True,1507.8,6042,0,0.7,
+Tavily,cloudflare_protected,Coinbase – Bitcoin explainer,https://www.coinbase.com/learn/crypto-basics/what-is-bitcoin,True,True,1522.3,41311,0,1.0,
+Tavily,cloudflare_protected,Canva Learn,https://www.canva.com/learn/what-is-graphic-design/,False,False,1132.1,0,0,0.0,
+Tavily,cloudflare_protected,Glassdoor Blog,https://www.glassdoor.com/blog/guide/how-to-write-a-resume/,False,False,2901.2,0,0,0.0,
+Tavily,akamai_perimeter_protected,Target – AirPods Pro,https://www.target.com/p/apple-airpods-pro-2nd-generation/-/A-85978612,False,False,1836.0,0,0,0.0,
+Tavily,akamai_perimeter_protected,Chewy – Dog Food,https://www.chewy.com/royal-canin-medium-adult-dry-dog-food/dp/53506,False,False,1072.9,0,0,0.0,
+Tavily,ecommerce,Amazon – Echo Dot (5th Gen),https://www.amazon.com/dp/B0BDHWDR12,True,True,809.2,3062,0,0.7,
+Tavily,ecommerce,Etsy – Listing,https://www.etsy.com/listing/1837820578,False,False,1820.2,0,0,0.0,"('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+Tavily,ecommerce,eBay – Listing,https://www.ebay.com/itm/256683475247,False,False,1188.7,0,0,0.0,
+Tavily,ecommerce,Walmart – AirPods Pro,https://www.walmart.com/ip/Apple-AirPods-Pro-2nd-Generation/2125259679,False,False,2457.1,0,0,0.0,
+ScrapingBee,cloudflare_protected,Glassdoor Blog,https://www.glassdoor.com/blog/guide/how-to-write-a-resume/,False,False,60387.3,0,0,0.0,"HTTPSConnectionPool(host='app.scrapingbee.com', port=443): Read timed out. (read timeout=60)"
+ScrapingBee,akamai_perimeter_protected,Best Buy – AirPods Pro,https://www.bestbuy.com/site/apple-airpods-pro-2nd-generation/4900964.p,False,False,60335.4,0,0,0.0,"HTTPSConnectionPool(host='app.scrapingbee.com', port=443): Read timed out. (read timeout=60)"
+ScrapingBee,akamai_perimeter_protected,Chewy – Dog Food,https://www.chewy.com/royal-canin-medium-adult-dry-dog-food/dp/53506,False,False,59136.9,0,0,0.0,"('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+ScrapingBee,ecommerce,Walmart – AirPods Pro,https://www.walmart.com/ip/Apple-AirPods-Pro-2nd-Generation/2125259679,False,False,48180.4,0,0,0.0,"('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+Tavily,news_media,TechCrunch,https://techcrunch.com/2025/01/01/the-best-tech-of-2024/,False,False,7439.5,0,0,0.0,
+Tavily,news_media,Ars Technica,https://arstechnica.com,True,True,7699.6,20384,0,1.0,
+Tavily,news_media,BBC Tech,https://www.bbc.com/news/technology,True,True,7917.3,25363,0,1.0,
+Tavily,akamai_perimeter_protected,Best Buy – AirPods Pro,https://www.bestbuy.com/site/apple-airpods-pro-2nd-generation/4900964.p,False,False,62353.0,0,0,0.0,"HTTPSConnectionPool(host='api.tavily.com', port=443): Read timed out. (read timeout=60)"

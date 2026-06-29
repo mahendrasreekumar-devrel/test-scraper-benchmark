@@ -3,8 +3,8 @@ __pycache__/
 *.pyc
 .venv/
 venv/
-results/
-!results/official/
+results/results_*
+results/plots/
 dist/
 *.egg-info/
 .DS_Store
