@@ -1,0 +1,106 @@
+# Scraper Benchmark — URL Test Set
+# 25 URLs across 6 categories.
+# Categories are chosen to surface meaningful differences between scrapers,
+# particularly around JavaScript rendering and bot-protection bypass.
+#
+# Add your own URLs here or swap any out before running.
+# Format: each entry needs `url`, `name`, and `expected_content` (a string
+# that should appear in a successful scrape response).
+
+categories:
+
+  static_html:
+    description: "Plain HTML pages — no JS rendering needed. All scrapers should pass these."
+    urls:
+      - url: "https://en.wikipedia.org/wiki/Web_scraping"
+        name: "Wikipedia – Web Scraping"
+        expected_content: "web scraping"
+      - url: "https://news.ycombinator.com"
+        name: "Hacker News"
+        expected_content: "Hacker News"
+      - url: "https://httpbin.org/html"
+        name: "HTTPBin HTML"
+        expected_content: "Herman Melville"
+      - url: "https://quotes.toscrape.com"
+        name: "Quotes to Scrape (test site)"
+        expected_content: "Quotes to Scrape"
+
+  js_heavy:
+    description: "React/Next.js SPAs — require JS rendering. Tests headless browser capability."
+    urls:
+      - url: "https://vercel.com"
+        name: "Vercel Homepage"
+        expected_content: "Vercel"
+      - url: "https://stripe.com/docs"
+        name: "Stripe Docs"
+        expected_content: "Stripe"
+      - url: "https://react.dev"
+        name: "React Docs"
+        expected_content: "React"
+      - url: "https://nextjs.org/docs"
+        name: "Next.js Docs"
+        expected_content: "Next.js"
+      - url: "https://tailwindcss.com/docs/installation"
+        name: "Tailwind CSS Docs"
+        expected_content: "Tailwind"
+
+  cloudflare_protected:
+    description: "Sites behind Cloudflare's bot management. Baseline scrapers typically get 403 or challenge pages."
+    urls:
+      - url: "https://www.cloudflare.com/en-gb/learning/what-is-cloudflare/"
+        name: "Cloudflare – About"
+        expected_content: "Cloudflare"
+      - url: "https://discord.com/safety"
+        name: "Discord Safety"
+        expected_content: "Discord"
+      - url: "https://www.coinbase.com/learn/crypto-basics/what-is-bitcoin"
+        name: "Coinbase – Bitcoin explainer"
+        expected_content: "Bitcoin"
+      - url: "https://www.canva.com/learn/what-is-graphic-design/"
+        name: "Canva Learn"
+        expected_content: "design"
+      - url: "https://www.glassdoor.com/blog/guide/how-to-write-a-resume/"
+        name: "Glassdoor Blog"
+        expected_content: "resume"
+
+  akamai_perimeter_protected:
+    description: "Sites protected by Akamai Bot Manager or PerimeterX. High-signal test for enterprise-grade anti-bot bypass."
+    urls:
+      - url: "https://www.bestbuy.com/site/apple-airpods-pro-2nd-generation/4900964.p"
+        name: "Best Buy – AirPods Pro"
+        expected_content: "AirPods"
+      - url: "https://www.target.com/p/apple-airpods-pro-2nd-generation/-/A-85978612"
+        name: "Target – AirPods Pro"
+        expected_content: "AirPods"
+      - url: "https://www.chewy.com/royal-canin-medium-adult-dry-dog-food/dp/53506"
+        name: "Chewy – Dog Food"
+        expected_content: "Royal Canin"
+
+  ecommerce:
+    description: "E-commerce product pages — dynamic pricing, personalised content, often behind CDN + bot protection."
+    urls:
+      - url: "https://www.amazon.com/dp/B0BDHWDR12"
+        name: "Amazon – Echo Dot (5th Gen)"
+        expected_content: "Echo"
+      - url: "https://www.etsy.com/listing/1837820578"
+        name: "Etsy – Listing"
+        expected_content: "Etsy"
+      - url: "https://www.ebay.com/itm/256683475247"
+        name: "eBay – Listing"
+        expected_content: "eBay"
+      - url: "https://www.walmart.com/ip/Apple-AirPods-Pro-2nd-Generation/2125259679"
+        name: "Walmart – AirPods Pro"
+        expected_content: "AirPods"
+
+  news_media:
+    description: "News and media pages — often behind CDNs, some with soft paywalls. Tests JS rendering + content extraction quality."
+    urls:
+      - url: "https://techcrunch.com/2025/01/01/the-best-tech-of-2024/"
+        name: "TechCrunch"
+        expected_content: "TechCrunch"
+      - url: "https://www.bbc.com/news/technology"
+        name: "BBC Tech"
+        expected_content: "BBC"
+      - url: "https://arstechnica.com"
+        name: "Ars Technica"
+        expected_content: "Ars Technica"
