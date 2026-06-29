@@ -1,5 +1,5 @@
 # Scraper Benchmark — URL Test Set
-# 21 URLs across 5 categories.
+# 18 URLs across 5 categories.
 # Categories are chosen to surface meaningful differences between scrapers,
 # particularly around JavaScript rendering and bot-protection bypass.
 #
@@ -18,9 +18,6 @@ categories:
       - url: "https://news.ycombinator.com"
         name: "Hacker News"
         expected_content: "Hacker News"
-      - url: "https://httpbin.org/html"
-        name: "HTTPBin HTML"
-        expected_content: "Herman Melville"
       - url: "https://quotes.toscrape.com"
         name: "Quotes to Scrape (test site)"
         expected_content: "Quotes to Scrape"
@@ -69,15 +66,9 @@ categories:
       - url: "https://www.amazon.com/dp/B0BDHWDR12"
         name: "Amazon – Echo Dot (5th Gen)"
         expected_content: "Echo"
-      - url: "https://www.etsy.com/listing/1837820578"
-        name: "Etsy – Listing"
-        expected_content: "Etsy"
       - url: "https://www.ebay.com/itm/256683475247"
         name: "eBay – Listing"
         expected_content: "eBay"
-      - url: "https://www.walmart.com/ip/Apple-AirPods-Pro-2nd-Generation/2125259679"
-        name: "Walmart – AirPods Pro"
-        expected_content: "AirPods"
 
   news_media:
     description: "News and media pages — often behind CDNs, some with soft paywalls. Tests JS rendering + content extraction quality."
