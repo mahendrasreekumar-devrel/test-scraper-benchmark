@@ -1,4 +1,4 @@
-# Scraper Benchmark — URL Test Set
+# Scraper Benchmark — URL Set
 # 18 URLs across 5 categories.
 # Categories are chosen to surface meaningful differences between scrapers,
 # particularly around JavaScript rendering and bot-protection bypass.
@@ -23,7 +23,7 @@ categories:
         expected_content: "Quotes to Scrape"
 
   js_heavy:
-    description: "React/Next.js SPAs — require JS rendering. Tests headless browser capability."
+    description: "React/Next.js SPAs — require JS rendering and headless browser capability."
     urls:
       - url: "https://vercel.com"
         name: "Vercel Homepage"
@@ -71,7 +71,7 @@ categories:
         expected_content: "eBay"
 
   news_media:
-    description: "News and media pages — often behind CDNs, some with soft paywalls. Tests JS rendering + content extraction quality."
+    description: "News and media pages — often behind CDNs, some with soft paywalls. Requires JS rendering and quality content extraction."
     urls:
       - url: "https://techcrunch.com/2025/01/01/the-best-tech-of-2024/"
         name: "TechCrunch"

@@ -2,7 +2,7 @@
 
 **How does Anakin's URL Scraper stack up against the field?**
 
-This repo benchmarks [Anakin's `/v1/url-scraper` endpoint](https://anakin.io) against six other web scraping APIs across 18 URLs — a mix of static pages, JS-heavy SPAs, Cloudflare-protected sites, e-commerce pages, and news/media.
+This repo benchmarks [Anakin's `/v1/url-scraper` endpoint](https://anakin.io) against five other web scraping APIs across 18 URLs — a mix of static pages, JS-heavy SPAs, Cloudflare-protected sites, e-commerce pages, and news/media.
 
 You bring your own API keys. Plug them into `.env`, run one command, get a terminal table + CSV + charts.
 
@@ -14,7 +14,7 @@ You bring your own API keys. Plug them into `.env`, run one command, get a termi
 | Firecrawl | `/v1/scrape` | YC-backed, Markdown output |
 | ZenRows | `/v1/` | JS rendering + premium proxies |
 | ScraperAPI | `/api/` | Proxy-based, returns raw HTML |
-| Oxylabs | `/v1/queries` | Enterprise proxy network, returns raw HTML |
+| Oxylabs | `/v1/queries` | Enterprise proxy network — not benchmarked (no free tier) |
 | ScrapingBee | `/api/v1/` | Acquired by Oxylabs Jun 2025, returns raw HTML |
 | Tavily | `/extract` | Search-focused; uses their URL extraction endpoint |
 
