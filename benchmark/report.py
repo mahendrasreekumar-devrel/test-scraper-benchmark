@@ -203,6 +203,8 @@ def save_plots(results: list[JudgedResult], output_dir: Path) -> None:
         _plot_success_rate(results, scrapers, theme, output_dir / f"success_rate{suffix}.png")
         _plot_category_table(results, scrapers, theme, output_dir / f"category_table{suffix}.png")
         _plot_category_heatmap(results, scrapers, theme, output_dir / f"category_heatmap{suffix}.png")
+        _plot_content_quality(results, scrapers, theme, output_dir / f"content_quality{suffix}.png")
+        _plot_response_time(results, scrapers, theme, output_dir / f"response_time{suffix}.png")
 
     print(f"  Plots saved → {output_dir}/")
 
@@ -342,6 +344,85 @@ def _plot_category_heatmap(results, scrapers, theme, output_path):
     fig.patch.set_facecolor(theme["bg"])
     ax.set_facecolor(theme["bg"])
     ax.tick_params(colors=theme["fg"])
+    plt.tight_layout()
+    fig.savefig(output_path, dpi=150, bbox_inches="tight", facecolor=theme["bg"])
+    plt.close(fig)
+
+
+def _plot_content_quality(results, scrapers, theme, output_path):
+    scores = {}
+    for s in scrapers:
+        rows = [r for r in results if r.result.scraper == s]
+        scores[s] = sum(r.content_quality_score for r in rows) / len(rows) if rows else 0
+
+    # sort descending, Anakin always first
+    others_sorted = sorted([s for s in scrapers if s != "Anakin"],
+                           key=lambda s: scores[s], reverse=True)
+    order = (["Anakin"] + others_sorted) if "Anakin" in scrapers else others_sorted
+
+    values = [scores[s] for s in order]
+    colors = [theme["bar_anakin"] if s == "Anakin" else theme["bar_default"] for s in order]
+
+    fig, ax = plt.subplots(figsize=(11, 5))
+    bars = ax.barh(order[::-1], values[::-1], color=colors[::-1], height=0.55, zorder=3)
+    ax.set_xlim(0, 1.15)
+    ax.set_xlabel("Content quality score", color=theme["fg"])
+    ax.set_title("Web Scraper Benchmark — Content Quality Score", color=theme["fg"],
+                 fontweight="bold", pad=16, fontsize=13)
+
+    for bar, val, scraper in zip(bars, values[::-1], order[::-1]):
+        weight = "bold" if scraper == "Anakin" else "normal"
+        label = f"★ {val:.2f}" if scraper == "Anakin" else f"{val:.2f}"
+        ax.text(bar.get_width() + 0.02, bar.get_y() + bar.get_height() / 2,
+                label, ha="left", va="center", fontsize=10,
+                fontweight=weight, color=theme["fg"])
+
+    note = "Score: 0.5 × success + 0.3 × keyword match + 0.2 × content length (max 1.0)"
+    fig.text(0.5, -0.04, note, ha="center", fontsize=7.5,
+             color=theme["fg"], alpha=0.6, style="italic")
+
+    _apply_theme(fig, ax, theme)
+    plt.tight_layout()
+    fig.savefig(output_path, dpi=150, bbox_inches="tight", facecolor=theme["bg"])
+    plt.close(fig)
+
+
+def _plot_response_time(results, scrapers, theme, output_path):
+    import statistics
+
+    medians = {}
+    for s in scrapers:
+        successful = [r.result.response_time_ms for r in results
+                      if r.result.scraper == s and r.result.success]
+        medians[s] = statistics.median(successful) / 1000 if successful else 0  # convert to seconds
+
+    # sort ascending (fastest first)
+    order = sorted(scrapers, key=lambda s: medians[s])
+    values = [medians[s] for s in order]
+    colors = [theme["bar_anakin"] if s == "Anakin" else theme["bar_default"] for s in order]
+
+    fig, ax = plt.subplots(figsize=(11, 5))
+    bars = ax.bar(order, values, color=colors, width=0.55, zorder=3)
+    ax.set_ylabel("Median response time (s)", color=theme["fg"])
+    ax.set_title("Web Scraper Benchmark — Median Response Time", color=theme["fg"],
+                 fontweight="bold", pad=16, fontsize=13)
+    ax.tick_params(axis="x", rotation=0)
+
+    for bar, val, scraper in zip(bars, values, order):
+        weight = "bold" if scraper == "Anakin" else "normal"
+        label = f"★ {val:.1f}s" if scraper == "Anakin" else f"{val:.1f}s"
+        ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.3,
+                label, ha="center", va="bottom", fontsize=10,
+                fontweight=weight, color=theme["fg"])
+
+    ax.set_ylim(0, max(values) * 1.2)
+
+    note = ("* Anakin uses async polling — response times include network polling overhead. "
+            "Actual server-side processing time is lower. Speed improvements in progress.")
+    fig.text(0.5, -0.04, note, ha="center", fontsize=7.5,
+             color=theme["fg"], alpha=0.6, style="italic", wrap=True)
+
+    _apply_theme(fig, ax, theme)
     plt.tight_layout()
     fig.savefig(output_path, dpi=150, bbox_inches="tight", facecolor=theme["bg"])
     plt.close(fig)

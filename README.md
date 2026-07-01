@@ -2,7 +2,7 @@
 
 **How does Anakin's URL Scraper stack up against the field?**
 
-This repo benchmarks [Anakin's `/v1/scrape` endpoint](https://anakin.io) against six other web scraping APIs across 18 URLs — a mix of static pages, JS-heavy SPAs, Cloudflare-protected sites, e-commerce pages, and news/media.
+This repo benchmarks [Anakin's `/v1/url-scraper` endpoint](https://anakin.io) against six other web scraping APIs across 18 URLs — a mix of static pages, JS-heavy SPAs, Cloudflare-protected sites, e-commerce pages, and news/media.
 
 You bring your own API keys. Plug them into `.env`, run one command, get a terminal table + CSV + charts.
 
@@ -10,7 +10,7 @@ You bring your own API keys. Plug them into `.env`, run one command, get a termi
 
 | Scraper | Endpoint | Notes |
 |---|---|---|
-| **Anakin** | `/v1/scrape` | Returns clean Markdown, handles JS + anti-bot natively |
+| **Anakin** | `/v1/url-scraper` | Returns clean Markdown, handles JS + anti-bot natively |
 | Firecrawl | `/v1/scrape` | YC-backed, Markdown output |
 | ZenRows | `/v1/` | JS rendering + premium proxies |
 | ScraperAPI | `/api/` | Proxy-based, returns raw HTML |
@@ -35,6 +35,10 @@ Pre-run results and charts are in [`results/official/`](results/official/). Re-r
 ![Success Rate](results/official/plots/success_rate_light.png)
 ![Category Table](results/official/plots/category_table_light.png)
 ![Category Heatmap](results/official/plots/category_heatmap_light.png)
+![Content Quality](results/official/plots/content_quality_light.png)
+![Response Time](results/official/plots/response_time_light.png)
+
+> Response times for Anakin include async polling overhead — actual server-side processing time is lower. Speed improvements are in progress.
 
 ## Quickstart
 
@@ -82,9 +86,11 @@ results/
 ├── results_2026-06-28_12-00-00.json   ← all raw results
 ├── results_2026-06-28_12-00-00.csv    ← spreadsheet-friendly
 └── plots/
-    ├── success_rate.png
-    ├── response_time.png
-    └── category_heatmap.png
+    ├── success_rate_light.png / success_rate_dark.png
+    ├── category_table_light.png / category_table_dark.png
+    ├── category_heatmap_light.png / category_heatmap_dark.png
+    ├── content_quality_light.png / content_quality_dark.png
+    └── response_time_light.png / response_time_dark.png
 ```
 
 To regenerate charts from an existing results file:
